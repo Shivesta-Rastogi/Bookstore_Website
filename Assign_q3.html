@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cultural Festival Registration</title>
+</head>
+<body style="background-image: url('fest.jpg'); 
+background-repeat: no-repeat; background-size: cover; height: 100vh; margin: 0">
+    <center>
+    <h1 style="text-align: center; color: #800000; font-size: 40px; font-family: Algerian; margin-top: 200px;">
+        Cultural Festival Registration Form</h1>
+    <form method="get">
+        <label for="name">Enter your Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Enter your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="institution">Institution:</label>
+        <input type="text" id="institution" name="institution" list="institutes" required>
+        <datalist id="institutes">
+            <option value="PMS University">
+            <option value="Sunshine University">
+            <option value="ABC University">
+            <option value="Delhi University">
+        </datalist><br><br>
+
+        <label for="event">Select Event:</label>
+        <select id="event" name="event">
+            <option value="dance">Dance</option>
+            <option value="music">Music</option>
+            <option value="art">Art</option>
+            <option value="drama">Drama</option>
+        </select><br><br>
+
+        <label>Participation Type:</label><br>
+        <input type="radio" id="solo" name="participation" value="solo" required>
+        <label for="solo">Solo</label><br>
+        <input type="radio" id="group" name="participation" value="group">
+        <label for="group">Group</label><br><br>
+
+        <label>Preferred Time Slots:</label><br>
+        <input type="checkbox" id="morning" name="timeslot" value="morning">
+        <label for="morning">Morning</label><br>
+        <input type="checkbox" id="afternoon" name="timeslot" value="afternoon">
+        <label for="afternoon">Afternoon</label><br>
+        <input type="checkbox" id="evening" name="timeslot" value="evening">
+        <label for="evening">Evening</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    </center>
+</body>
+</html>
